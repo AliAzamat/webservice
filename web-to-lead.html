@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./web-to-lead.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img class="header-logo__img" src="./logo.png" alt="">
+            <span class="header-logo__text">RealEst</span>
+        </div>
+        <nav>
+            <ul class="nav__item">
+                <li class="nav__link"><a href="./index.html">Issue</a></li>
+                <li class="nav__link"><a href="./web-to-lead.html">Become a Customer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+
+        <h1 class="title">Become our Customer and get the best property out there!</h1>
+
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+            <input type=hidden name="oid" value="00D8d000005CzXu">
+            <input type=hidden name="retURL"
+                value="https://aliazamat.github.io/thankslead/">
+
+            <input required placeholder="First Name" id="first_name" maxlength="40" name="first_name" size="20"
+                type="text" /><br>
+
+            <input required placeholder="Last Name" id="last_name" maxlength="80" name="last_name" size="20"
+                type="text" /><br>
+
+            <div class="form__select">
+                <label for="salutation">Salutation</label><select id="salutation" name="salutation">
+                    <option value="">--None--</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Prof.">Prof.</option>
+                </select>
+            </div><br>
+
+            <input required placeholder="Email" id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+            <input required placeholder="Phone" id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+            <input required placeholder="Company" id="company" maxlength="40" name="company" size="20"
+                type="text" /><br>
+
+            <input placeholder="Country" id="country" maxlength="40" name="country" size="20" type="text" /><br>
+
+            <input placeholder="City" id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+            <input placeholder="State/Province" id="state" maxlength="20" name="state" size="20" type="text" /><br>
+
+            <input placeholder="submit" class="button" type="submit" name="submit">
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>

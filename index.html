@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./web-to-case.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img class="header-logo__img" src="./logo.png" alt="">
+            <span class="header-logo__text">RealEst</span>
+        </div>
+        <nav>
+            <ul class="nav__item">
+                <li class="nav__link"><a href="./index.html">Issue</a></li>
+                <li class="nav__link"><a href="./web-to-lead.html">Become a Customer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1 class="title">Submit Your Issue</h1>
+
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+            <input type=hidden name="orgid" value="00D8d000005CzXu">
+            <input type=hidden name="retURL"
+                value="https://aliazamat.github.io/thankstocase/">
+
+            <input required placeholder="Name" id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+            <input placeholder="Email" required id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+            <input placeholder="Phone" id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+            <input placeholder="Subject" required id="subject" maxlength="80" name="subject" size="20"
+                type="text" /><br>
+
+            <div class="form__select">
+                <label aria-required="true" for="type">Issue Type</label>
+                <select aria-placeholder="Type" id="type"
+                    name="type">
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Structural">Structural</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div><br>
+
+            <textarea placeholder="Description" required name="description"></textarea><br>
+
+            <input placeholder="submit" class="button" type="submit" name="submit">
+
+        </form>
+    </section>
+
+</body>
+
+</html>
